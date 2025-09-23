@@ -5,9 +5,9 @@ import MainNavBtn from "./MainNavBtn"
 
 export default function Header() {
     return (
-        <header className="container flex justify-between py-6">
+        <header className="container flex justify-between min-h-24">
 
-            <img src={logo} alt="dc-logo" className="w-22 h-22" />
+            <img src={logo} alt="dc-logo" className="w-20 h-20 my-auto" />
 
             <MainNavBtn />
 
