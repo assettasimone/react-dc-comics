@@ -11,3 +11,7 @@ body {
 .container {
     @apply max-w-7xl mx-auto;
 }
+
+@theme {
+    --color-dc-blue: #0282f9;
+}
