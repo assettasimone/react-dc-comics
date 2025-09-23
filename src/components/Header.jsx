@@ -2,7 +2,7 @@ import logo from "../assets/img/dc-logo.png"
 
 export default function Header() {
     return (
-        <header className="flex justify-between max-w-7xl mx-auto my-6">
+        <header className="container flex justify-between py-6">
 
             <img src={logo} alt="dc-logo" className="w-22 h-22" />
             <nav>
