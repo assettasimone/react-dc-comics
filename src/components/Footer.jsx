@@ -8,6 +8,7 @@ import periscope from '../assets/img/footer-periscope.png'
 import pinterest from '../assets/img/footer-pinterest.png'
 import twitter from '../assets/img/footer-twitter.png'
 import youtube from '../assets/img/footer-youtube.png'
+import footerBg from '../assets/img/footer-bg.jpg'
 
 
 import FeaturedCard from '../components/FeatureCard'
@@ -25,12 +26,32 @@ export default function Footer() {
                     <FeaturedCard text="dc power" imgsrc={visaIcon} />
                 </div>
             </section>
-            <section id='footer-link' className=''>
+            <nav id='footer-link' className='bg-cover py-20' style={{ backgroundImage: `url(${footerBg})` }}>
+                <div id="row " className='container flex '>
+                    <div id="col-1">
+                        <h4 className='uppercase text-white font-medium w-fit'>DC Comics</h4>
+                        <ul>
+                            <li><a href="#">Characters</a></li>
+                            <li><a href="#">Comics</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">TV</a></li>
+                            <li><a href="#">Games</a></li>
+                            <li><a href="#">Videos</a></li>
+                            <li><a href="#">News</a></li>
+                        </ul>
+                    </div>
+                    <div id="col-1">
 
-            </section>
+                    </div>
+                    <div id="col-1">
+
+                    </div>
+
+                </div>
+            </nav>
             <section id="footer-social" className='bg-neutral-800' >
                 <div className='container py-4 flex justify-between'>
-                    <a href="#" className='p-4 bo '>sign-up now!</a>
+                    <a href="#" className='p-4 text-white'>sign-up now!</a>
                     <div id='follow-us' className='flex items-center '>
                         <span className='text-dc-blue font-bold uppercase mr-4 '>Follow Us</span>
                         <ul id="social-link" className='flex gap-3'>
