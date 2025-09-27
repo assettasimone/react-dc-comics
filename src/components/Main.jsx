@@ -13,9 +13,9 @@ export default function Main() {
                 <div className="container py-20">
                     <div id="collectionTitle" className="bg-dc-blue text-2xl p-4 w-fit mb-10 absolute -mt-28 uppercase font-medium text-white">current series</div>
                     {/* Product grid */}
-                    <div class="grid grid-cols-6 gap-5">
+                    <div className="grid grid-cols-6 gap-5">
                         {comics.map(item => (
-                            <div id="card" className="">
+                            <div id="card" className="" key={item.id}>
                                 <div style={{ backgroundImage: `url(${item.thumb})` }} className="w-full h-48 bg-cover" ></div>
                                 <h3 className="text-white uppercase text-sm py-4">{item.title}</h3>
                             </div>
