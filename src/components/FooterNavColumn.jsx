@@ -5,7 +5,7 @@ export default function FooterNavColumn({ menu, columns }) {
     return (
         <>
             {columns.map(column => (
-                <div id={`col-${column}`} className='mr-12'>
+                <div key={column} id={`col-${column}`} className='mr-12'>
                     <FooterNavElements position={column} menu={menu} />
                 </div>
             ))}
