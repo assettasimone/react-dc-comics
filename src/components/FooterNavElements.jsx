@@ -1,10 +1,8 @@
-import footerNavs from "../data/nav";
+export default function FooterNavElements({ position, menu }) {
 
-export default function FooterNavElements(props) {
+    const columnPosition = position
 
-    const columnPosition = props.position
-
-    const navInColumn = footerNavs.filter(item => item.position === columnPosition)
+    const navInColumn = menu.filter(item => item.position === columnPosition)
 
     return (
         <>
@@ -29,15 +27,3 @@ export default function FooterNavElements(props) {
 
 }
 
-
-
-
-/*  <ul className='text-zinc-500 text-sm mb-4'>
-                <li className='hover:text-dc-blue'><a href="#">Characters</a></li>
-                <li><a href="#">Comics</a></li>
-                <li><a href="#">Movies</a></li>
-                <li><a href="#">TV</a></li>
-                <li><a href="#">Games</a></li>
-                <li><a href="#">Videos</a></li>
-                <li><a href="#">News</a></li>
-            </ul> */

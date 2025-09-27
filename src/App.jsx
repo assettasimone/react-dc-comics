@@ -2,6 +2,8 @@ import Header from './components/Header'
 import Main from './components/Main'
 import Footer from './components/Footer'
 
+import footerNavs from "./data/nav";
+import footerColumns from './data/footerColumns'
 
 function App() {
 
@@ -9,7 +11,7 @@ function App() {
     <>
       <Header />
       <Main />
-      <Footer />
+      <Footer menu={footerNavs} columns={footerColumns} />
     </>
   )
 }

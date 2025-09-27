@@ -1,14 +1,12 @@
 import FooterNavElements from '../components/FooterNavElements'
-const navColumns = [1, 2, 3]
 
-
-export default function FooterNavColumn() {
+export default function FooterNavColumn({ menu, columns }) {
 
     return (
         <>
-            {navColumns.map(column => (
+            {columns.map(column => (
                 <div id={`col-${column}`} className='mr-12'>
-                    <FooterNavElements position={column} />
+                    <FooterNavElements position={column} menu={menu} />
                 </div>
             ))}
         </>

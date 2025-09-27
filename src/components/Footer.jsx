@@ -14,7 +14,7 @@ import dc_logo_bg from '../assets/img/dc-logo-bg.png'
 import FeaturedCard from '../components/FeatureCard'
 import FooterNavColumn from '../components/FooterNavColumn'
 
-export default function Footer() {
+export default function Footer({ menu, columns }) {
 
     return (
 
@@ -40,7 +40,7 @@ export default function Footer() {
             >
 
                 <section id="row " className='container flex'>
-                    <FooterNavColumn />
+                    <FooterNavColumn menu={menu} columns={columns} />
                 </section>
             </nav>
             <section id="footer-social" className='bg-neutral-800' >
