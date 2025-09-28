@@ -1,8 +1,7 @@
-import comics from "../data/comics"
 import heroImage from "../assets/img/jumbotron.jpg"
 
 
-export default function Main() {
+export default function Main({ comics }) {
     return (
         <>
             {/* jumbotron section */}
