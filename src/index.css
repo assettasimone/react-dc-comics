@@ -6,8 +6,12 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+img {
+    max-width: 100%;
+}
+
 .container {
-    @apply max-w-7xl mx-auto;
+    @apply max-w-7xl lg:mx-auto md:mx-2 sm:mx-4;
 }
 
 @theme {
